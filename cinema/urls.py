@@ -20,7 +20,7 @@ urlpatterns = [
     path("actors/", ActorList.as_view(), name="actor-list"),
     path("actors/<int:pk>/", ActorDetail.as_view(), name="actor-detail"),
     path(
-        "cinemahalls/",
+        "cinema-halls/",
         CinemaHallViewSet.as_view(actions={
             "get": "list",
             "post": "create",
@@ -28,7 +28,7 @@ urlpatterns = [
         name="cinema-hall-list"
     ),
     path(
-        "cinemahalls/<int:pk>/",
+        "cinema-halls/<int:pk>/",
         CinemaHallViewSet.as_view(actions={
             "get": "retrieve",
             "put": "update",
